@@ -1,8 +1,8 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   deleteContact,
-  fetchContacts,
+  // fetchContacts,
 } from 'redux/contactList/thunk.contactList';
 import { selectFilterContacts } from 'redux/selectors';
 import css from './ContactList.module.css';
@@ -11,9 +11,9 @@ export const ContactList = () => {
   const dispatch = useDispatch();
   const contacts = useSelector(selectFilterContacts);
 
-  useEffect(() => {
-    dispatch(fetchContacts());
-  }, [dispatch]);
+  // useEffect(() => {
+  //   dispatch(fetchContacts());
+  // }, [dispatch]);
 
   const handleDeleteContact = id => {
     dispatch(deleteContact(id));
