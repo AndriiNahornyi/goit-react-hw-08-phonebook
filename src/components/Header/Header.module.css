@@ -4,7 +4,7 @@
   color: grey;
   background-color: burlywood;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .Navigation {
   display: flex;
@@ -32,12 +32,25 @@
 .Item {
   list-style: none;
 }
-.Paragraph {
+.Page {
   padding: 0;
   margin: 0;
-  margin-bottom: 5px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 22px;
+}
+.Login {
+  padding: 0;
+  margin: 0;
+  /* margin-bottom: 5px; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
+}
+.Auth {
+  padding: 0;
+  margin: 0;
+  /* margin-bottom: 5px; */
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 18px;
 }
 .TitleContainer {
   display: flex;
@@ -48,4 +61,24 @@
 .Title {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 32px;
+}
+.HeaderBtn {
+  margin-top: 10px;
+  padding: 7px 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: aliceblue;
+  background-color: tomato;
+  border: none;
+  border-radius: 5px;
+
+  transition-property: color, background-color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.HeaderBtn:hover {
+  background: transparent;
+  color: tomato;
+  border: 1px solid tomato;
 }

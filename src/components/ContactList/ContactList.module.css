@@ -5,15 +5,15 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: brown;
+  color: tomato;
 }
 .contactListBtn {
   color: aliceblue;
   background-color: tomato;
   border: none;
-  border-radius: 4px;
-  width: 100px;
-  height: 30px;
+  border-radius: 5px;
+  padding: 6px 10px;
+
   text-transform: uppercase;
   font-size: 12px;
   font-weight: 600;
