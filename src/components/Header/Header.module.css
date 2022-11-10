@@ -1,0 +1,51 @@
+.Header {
+  display: flex;
+  width: 100vw;
+  color: grey;
+  background-color: burlywood;
+  margin: 0;
+  margin-bottom: 50px;
+}
+.Navigation {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.NavLink {
+  text-decoration: none;
+  color: grey;
+  font-size: 18px;
+  font-weight: 500;
+
+  transition: color 250 ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.NavLink:hover,
+.NavLink:focus {
+  color: tomato;
+}
+.List {
+  padding: 0;
+  margin: 0;
+}
+.Item {
+  list-style: none;
+}
+.Paragraph {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 22px;
+}
+.TitleContainer {
+  display: flex;
+  align-items: center;
+  margin-left: 530px;
+  margin-right: auto;
+}
+.Title {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 32px;
+}

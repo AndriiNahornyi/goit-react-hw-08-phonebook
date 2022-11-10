@@ -37,10 +37,10 @@ export const ContactsForm = () => {
 
   return (
     <form className={css.contactsFormForm} onSubmit={onSubmit}>
-      <br />
+      {/* <br /> */}
       <label className={css.contactsFormLabel}>
-        Name
-        <br />
+        <h4 className={css.Title}>Name</h4>
+        {/* <br /> */}
         <input
           className={css.contactsFormInput}
           type="text"
@@ -52,11 +52,11 @@ export const ContactsForm = () => {
           required
         />
       </label>
-      <br />
-      <br />
+      {/* <br />
+      <br /> */}
       <label className={css.contactsFormLabel}>
-        Number
-        <br />
+        <h4 className={css.Title}>Number</h4>
+        {/* <br /> */}
         <input
           className={css.contactsFormInput}
           type="tel"
@@ -68,7 +68,7 @@ export const ContactsForm = () => {
           required
         />
       </label>
-      <br />
+      {/* <br /> */}
       <br />
       <button className={css.contactsFormBtn} type="submit">
         Add contact

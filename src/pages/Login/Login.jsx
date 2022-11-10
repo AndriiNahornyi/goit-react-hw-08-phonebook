@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { loginThunk } from 'redux/auth/thunk.auth';
+import css from './Login.module.css';
 
 export const Login = () => {
   const [email, setEmail] = useState('');
@@ -18,28 +19,37 @@ export const Login = () => {
     dispatch(loginThunk({ email, password }));
   };
   return (
-    <form onSubmit={onSubmit}>
-      <label>
-        Enter your email
-        <input
-          required
-          onChange={onInput}
-          name="email"
-          value={email}
-          type="email"
-        />
-      </label>
-      <label>
-        Enter your password
-        <input
-          required
-          onChange={onInput}
-          name="password"
-          value={password}
-          type="password"
-        />
-      </label>
-      <button type="submit">Login</button>
-    </form>
+    <>
+      <h2 className={css.Title}>Please Login</h2>
+      <form className={css.Form} onSubmit={onSubmit}>
+        <label>
+          {/* Enter your email */}
+          <input
+            className={css.Input}
+            required
+            onChange={onInput}
+            name="email"
+            value={email}
+            type="email"
+            placeholder="Enter your email"
+          />
+        </label>
+        <label>
+          {/* Enter your password */}
+          <input
+            className={css.Input}
+            required
+            onChange={onInput}
+            name="password"
+            value={password}
+            type="password"
+            placeholder=" Enter your password"
+          />
+        </label>
+        <button className={css.Btn} type="submit">
+          Login
+        </button>
+      </form>
+    </>
   );
 };

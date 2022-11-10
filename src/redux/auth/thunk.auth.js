@@ -8,7 +8,7 @@ export const registrationThunk = createAsyncThunk(
       const responce = await getNewUser(data);
       return responce;
     } catch (error) {
-      console.log('error', error);
+      // console.log('error', error);
       return thunkAPI.rejectWithValue(error.massage);
     }
   }
@@ -20,7 +20,7 @@ export const loginThunk = createAsyncThunk(
       const responce = await loginUser(data);
       return responce;
     } catch (error) {
-      console.log('error', error);
+      // console.log('error', error);
       return thunkAPI.rejectWithValue(error.massage);
     }
   }

@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { registrationThunk } from 'redux/auth/thunk.auth';
 import { toast } from 'react-toastify';
+import css from './RegistrationForm.module.css';
 
 export const RegistrationForm = () => {
   const [name, setName] = useState('');
@@ -35,48 +36,61 @@ export const RegistrationForm = () => {
     }
   };
   return (
-    <form onSubmit={handleFormSubmit}>
-      <label>
-        Enter your name
-        <input
-          required
-          onChange={handleInput}
-          name="name"
-          value={name}
-          type="text"
-        />
-      </label>
-      <label>
-        Enter your email
-        <input
-          required
-          onChange={handleInput}
-          name="email"
-          value={email}
-          type="email"
-        />
-      </label>
-      <label>
-        Enter your password
-        <input
-          required
-          onChange={handleInput}
-          name="password"
-          value={password}
-          type="password"
-        />
-      </label>
-      <label>
-        Confirm a password
-        <input
-          required
-          onChange={handleInput}
-          name="confirmPassword"
-          value={confirmPassword}
-          type="password"
-        />
-      </label>
-      <button type="submit">Registration</button>
-    </form>
+    <>
+      <h2 className={css.Title}>Please Sign In</h2>
+      <form className={css.Form} onSubmit={handleFormSubmit}>
+        <label>
+          {/* Enter your name */}
+          <input
+            className={css.Input}
+            required
+            onChange={handleInput}
+            name="name"
+            value={name}
+            type="text"
+            placeholder="Enter your name"
+          />
+        </label>
+        <label>
+          {/* Enter your email */}
+          <input
+            className={css.Input}
+            required
+            onChange={handleInput}
+            name="email"
+            value={email}
+            type="email"
+            placeholder="Enter your email"
+          />
+        </label>
+        <label>
+          {/* Enter your password */}
+          <input
+            className={css.Input}
+            required
+            onChange={handleInput}
+            name="password"
+            value={password}
+            type="password"
+            placeholder="Enter your password"
+          />
+        </label>
+        <label>
+          {/* Confirm a password */}
+          <input
+            className={css.Input}
+            required
+            onChange={handleInput}
+            name="confirmPassword"
+            value={confirmPassword}
+            type="password"
+            placeholder="Confirm a password"
+          />
+        </label>
+        <button className={css.Btn} type="submit">
+          Sign in
+        </button>
+      </form>
+    </>
   );
 };

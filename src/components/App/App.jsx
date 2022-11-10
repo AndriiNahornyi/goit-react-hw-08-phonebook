@@ -17,7 +17,7 @@ export const App = () => {
         <Route path="/login" element={<Login />} />
       </Routes>
       <section className={css.Section}>
-        <div>
+        <div className={css.Container}>
           <h1 className={css.appTitle}>Phonebook</h1>
           <ContactsForm />
 
