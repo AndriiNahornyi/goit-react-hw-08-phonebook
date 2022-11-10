@@ -22,9 +22,10 @@ export const Login = () => {
     <>
       <h2 className={css.Title}>Please Login</h2>
       <form className={css.Form} onSubmit={onSubmit}>
-        <label>
+        <label htmlFor="email">
           {/* Enter your email */}
           <input
+            id="email"
             className={css.Input}
             required
             onChange={onInput}
@@ -34,9 +35,10 @@ export const Login = () => {
             placeholder="Enter your email"
           />
         </label>
-        <label>
+        <label htmlFor="password">
           {/* Enter your password */}
           <input
+            id="password"
             className={css.Input}
             required
             onChange={onInput}

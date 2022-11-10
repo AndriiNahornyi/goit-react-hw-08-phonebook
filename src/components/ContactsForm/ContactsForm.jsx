@@ -28,7 +28,7 @@ export const ContactsForm = () => {
       return alert('This contact has already been added!');
     }
     e.preventDefault();
-    dispatch(addContact({ name: name, phone: number }));
+    dispatch(addContact({ name, number }));
     e.target.reset();
     //Alternative
     // setName('');

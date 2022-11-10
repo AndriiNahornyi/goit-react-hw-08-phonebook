@@ -24,7 +24,7 @@ export const ContactList = () => {
         <li className={css.contactListItem} key={contact.id}>
           <p
             className={css.ContactListItem}
-          >{`${contact.name}: ${contact.phone}`}</p>
+          >{`${contact.name}: ${contact.number}`}</p>
           <button
             className={css.contactListBtn}
             onClick={() => handleDeleteContact(contact.id)}

@@ -37,11 +37,12 @@ export const RegistrationForm = () => {
   };
   return (
     <>
-      <h2 className={css.Title}>Please Sign In</h2>
+      <h2 className={css.Title}>Please Sign Up</h2>
       <form className={css.Form} onSubmit={handleFormSubmit}>
-        <label>
+        <label htmlFor="name">
           {/* Enter your name */}
           <input
+            id="name"
             className={css.Input}
             required
             onChange={handleInput}
@@ -51,9 +52,10 @@ export const RegistrationForm = () => {
             placeholder="Enter your name"
           />
         </label>
-        <label>
+        <label htmlFor="email">
           {/* Enter your email */}
           <input
+            id="email"
             className={css.Input}
             required
             onChange={handleInput}
@@ -63,9 +65,10 @@ export const RegistrationForm = () => {
             placeholder="Enter your email"
           />
         </label>
-        <label>
+        <label htmlFor="password">
           {/* Enter your password */}
           <input
+            id="password"
             className={css.Input}
             required
             onChange={handleInput}
@@ -88,7 +91,7 @@ export const RegistrationForm = () => {
           />
         </label>
         <button className={css.Btn} type="submit">
-          Sign in
+          Sign up
         </button>
       </form>
     </>
