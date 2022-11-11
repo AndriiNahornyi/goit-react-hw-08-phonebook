@@ -17,6 +17,7 @@ export const Login = () => {
   const onSubmit = evt => {
     evt.preventDefault();
     dispatch(loginThunk({ email, password }));
+    evt.target.reset();
   };
   return (
     <>

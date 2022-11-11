@@ -1,23 +1,26 @@
 .Header {
+  position: relative;
   display: flex;
   width: 100vw;
   color: grey;
   background-color: burlywood;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 .Navigation {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 23px;
 }
 .NavLink {
   text-decoration: none;
   color: grey;
   font-size: 18px;
   font-weight: 500;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 22px;
 
   transition: color 250 ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -31,54 +34,34 @@
 }
 .Item {
   list-style: none;
+  margin-bottom: 5px;
 }
 .Page {
+  color: tomato;
+  text-decoration: none;
   padding: 0;
   margin: 0;
+  margin-bottom: 5px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 22px;
 }
-.Login {
-  padding: 0;
-  margin: 0;
-  /* margin-bottom: 5px; */
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 18px;
-}
-.Auth {
-  padding: 0;
-  margin: 0;
-  /* margin-bottom: 5px; */
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  font-size: 18px;
+.DeActive {
+  margin-bottom: 5px;
+  font-size: 20px;
+  text-decoration: none;
+  color: gray;
 }
 .TitleContainer {
   display: flex;
   align-items: center;
-  margin-left: 530px;
-  margin-right: auto;
+  margin: 0 auto;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .Title {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 32px;
-}
-.HeaderBtn {
-  margin-top: 10px;
-  padding: 7px 4px;
-  font-size: 12px;
-  font-weight: 600;
-  cursor: pointer;
-  color: aliceblue;
-  background-color: tomato;
-  border: none;
-  border-radius: 5px;
-
-  transition-property: color, background-color, border;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.HeaderBtn:hover {
-  background: transparent;
-  color: tomato;
-  border: 1px solid tomato;
 }

@@ -24,7 +24,12 @@ export const ContactsForm = () => {
     }
   };
   const onSubmit = e => {
-    if (contacts.some(contact => contact.name === name)) {
+    if (
+      contacts.some(
+        contact => contact.name.toLowerCase() === name.toLowerCase()
+      ) ||
+      contacts.some(contact => contact.number === number)
+    ) {
       return alert('This contact has already been added!');
     }
     e.preventDefault();
@@ -34,7 +39,6 @@ export const ContactsForm = () => {
     // setName('');
     // setNumber('');
   };
-
   return (
     <form className={css.contactsFormForm} onSubmit={onSubmit}>
       {/* <br /> */}

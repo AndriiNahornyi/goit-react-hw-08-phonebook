@@ -15,7 +15,7 @@ export default function Contacts() {
   return (
     <>
       <section className={css.Section}>
-        <div className={css.Container}>
+        <div>
           <h1 className={css.appTitle}>Phonebook</h1>
           <ContactsForm />
           <h2 className={css.appTitle}>Contacts</h2>

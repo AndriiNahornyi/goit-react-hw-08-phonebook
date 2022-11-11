@@ -1,1 +1,1 @@
-export * from './Registration.jsx';
+export { Registration as default } from './Registration.jsx';

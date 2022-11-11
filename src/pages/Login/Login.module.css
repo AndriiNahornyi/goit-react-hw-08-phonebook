@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
 
-  margin-bottom: 420px;
+  /* margin-bottom: 420px; */
 }
 .Title {
   margin: 0;
@@ -30,7 +30,7 @@
   padding-right: 15px;
   color: aliceblue;
   background-color: tomato;
-  border: none;
+  border: 1px solid tomato;
   border-radius: 4px;
   cursor: pointer;
   transition-property: color, background-color, border;

@@ -31,6 +31,7 @@ export const RegistrationForm = () => {
         password,
       };
       dispatch(registrationThunk(userInfo));
+      evt.target.reset();
     } else {
       toast.warn('The confirm password does not match');
     }

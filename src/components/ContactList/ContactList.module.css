@@ -10,7 +10,7 @@
 .contactListBtn {
   color: aliceblue;
   background-color: tomato;
-  border: none;
+  border: 1px solid tomato;
   border-radius: 5px;
   padding: 6px 10px;
 
